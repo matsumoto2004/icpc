@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://betrue12.hateblo.jp/entry/2020/09/23/005940 -->
+<html lang="ja" data-admin-domain="//blog.hatena.ne.jp" data-admin-origin="https://blog.hatena.ne.jp" data-author="betrue12" data-avail-langs="ja en" data-blog="betrue12.hateblo.jp" data-blog-host="betrue12.hateblo.jp" data-blog-is-public="1" data-blog-name="ARMERIA" data-blog-owner="betrue12" data-blog-show-ads="1" data-blog-show-sleeping-ads="1" data-blog-uri="https://betrue12.hateblo.jp/" data-blog-uuid="8454420450090767770" data-blogs-uri-base="https://betrue12.hateblo.jp" data-brand="hatenablog" data-data-layer="{&quot;hatenablog&quot;:{&quot;admin&quot;:{},&quot;analytics&quot;:{&quot;brand_property_id&quot;:&quot;&quot;,&quot;measurement_id&quot;:&quot;&quot;,&quot;non_sampling_property_id&quot;:&quot;&quot;,&quot;property_id&quot;:&quot;&quot;,&quot;separated_property_id&quot;:&quot;UA-29716941-17&quot;},&quot;blog&quot;:{&quot;blog_id&quot;:&quot;8454420450090767770&quot;,&quot;content_seems_japanese&quot;:&quot;true&quot;,&quot;disable_ads&quot;:&quot;&quot;,&quot;enable_ads&quot;:&quot;true&quot;,&quot;enable_keyword_link&quot;:&quot;true&quot;,&quot;entry_show_footer_related_entries&quot;:&quot;true&quot;,&quot;force_pc_view&quot;:&quot;false&quot;,&quot;is_public&quot;:&quot;true&quot;,&quot;is_responsive_view&quot;:&quot;false&quot;,&quot;is_sleeping&quot;:&quot;true&quot;,&quot;lang&quot;:&quot;ja&quot;,&quot;name&quot;:&quot;ARMERIA&quot;,&quot;owner_name&quot;:&quot;betrue12&quot;,&quot;uri&quot;:&quot;https://betrue12.hateblo.jp/&quot;},&quot;brand&quot;:&quot;hatenablog&quot;,&quot;page_id&quot;:&quot;entry&quot;,&quot;permalink_entry&quot;:{&quot;author_name&quot;:&quot;betrue12&quot;,&quot;categories&quot;:&quot;AtCoder\t\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\t\u7af6\u6280\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0&quot;,&quot;character_count&quot;:2878,&quot;date&quot;:&quot;2020-09-23&quot;,&quot;entry_id&quot;:&quot;26006613631162129&quot;,&quot;first_category&quot;:&quot;AtCoder&quot;,&quot;hour&quot;:&quot;0&quot;,&quot;title&quot;:&quot;AtCoder Library\u306eLazy Segtree\u306e\u30c1\u30fc\u30c8\u30b7\u30fc\u30c8&quot;,&quot;uri&quot;:&quot;https://betrue12.hateblo.jp/entry/2020/09/23/005940&quot;},&quot;pro&quot;:&quot;free&quot;,&quot;router_type&quot;:&quot;blogs&quot;}}" data-device="pc" data-dont-recommend-pro="false" data-global-domain="https://hatena.blog" data-globalheader-color="b" data-globalheader-type="pc" data-has-touch-view="1" data-help-url="https://help.hatenablog.com" data-page="entry" data-parts-domain="https://hatenablog-parts.com" data-plus-available="" data-pro="false" data-router-type="blogs" data-sentry-dsn="https://03a33e4781a24cf2885099fed222b56d@sentry.io/1195218" data-sentry-environment="production" data-sentry-sample-rate="0.1" data-static-domain="https://cdn.blog.st-hatena.com" data-version="b594205f8e0d2bc62426f9263fe82f" data-initial-state="{}"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/log.js"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/publishertag.prebid.136.js"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/segment"></script><script async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/tracker.min.js"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/destination"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/gtm(1).js"></script><script type="text/javascript" id="www-widgetapi-script" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/www-widgetapi.js" async=""></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/audience"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/js"></script><script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/iframe_api"></script>
+
+  
+
+  
+
+  
+
+
+  
+
+  <meta name="robots" content="max-image-preview:large">
+
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11">
+  <title>AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA</title>
+
+  
+  <link rel="canonical" href="https://betrue12.hateblo.jp/entry/2020/09/23/005940">
+
+
+
+  
+
+<meta itemprop="name" content="AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA">
+
+  <meta itemprop="image" content="https://cdn.image.st-hatena.com/image/scale/f095a31d700d625df229c1d7032d707b4b5ac5c2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F106916089%2F1592411661884548">
+
+
+  <meta property="og:title" content="AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA">
+<meta property="og:type" content="article">
+  <meta property="og:url" content="https://betrue12.hateblo.jp/entry/2020/09/23/005940">
+
+  <meta property="og:image" content="https://cdn.image.st-hatena.com/image/scale/f095a31d700d625df229c1d7032d707b4b5ac5c2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F106916089%2F1592411661884548">
+
+<meta property="og:image:alt" content="AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA">
+    <meta property="og:description" content="AtCoder LibraryのLazy Segtreeの使い方 - ARMERIA こちらの記事でAtCoder LibraryのLazy Segtreeの使い方を説明しましたが、コンテスト中に読んでられっか！みたいな時のためにコピペで使えるチートシートをまとめます。整数列に対する、以下の組み合わせ6種類です。 区間変更クエリ：加算、更新 区間取得クエリ：最小値、最大値、和 オーバーフローで死なないように整数列の要素を long long で扱っています。また INF および ID として を使います。 区間加算・区間最小値取得 区間加算・区間最大値取得 区間加算・区間和取得 区間変更・区間…">
+<meta property="og:site_name" content="ARMERIA">
+
+  <meta property="article:published_time" content="2020-09-22T15:59:40Z">
+
+    <meta property="article:tag" content="AtCoder">
+    <meta property="article:tag" content="プログラミング">
+    <meta property="article:tag" content="競技プログラミング">
+      <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cdn.image.st-hatena.com/image/scale/f095a31d700d625df229c1d7032d707b4b5ac5c2/backend=imagemagick;version=1;width=1300/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fdefault_entry_og_image%2F106916089%2F1592411661884548">  <meta name="twitter:title" content="AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA">    <meta name="twitter:description" content="AtCoder LibraryのLazy Segtreeの使い方 - ARMERIA こちらの記事でAtCoder LibraryのLazy Segtreeの使い方を説明しましたが、コンテスト中に読んでられっか！みたいな時のためにコピペで使えるチートシートをまとめます。整数列に対する、以下の組み合わせ6種類です。 区間…">  <meta name="twitter:app:name:iphone" content="はてなブログアプリ">
+  <meta name="twitter:app:id:iphone" content="583299321">
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940">
+  
+    <meta name="description" content="AtCoder LibraryのLazy Segtreeの使い方 - ARMERIA こちらの記事でAtCoder LibraryのLazy Segtreeの使い方を説明しましたが、コンテスト中に読んでられっか！みたいな時のためにコピペで使えるチートシートをまとめます。整数列に対する、以下の組み合わせ6種類です。 区間変更クエリ：加算、更新 区間取得クエリ：最小値、最大値、和 オーバーフローで死なないように整数列の要素を long long で扱っています。また INF および ID として を使います。 区間加算・区間最小値取得 区間加算・区間最大値取得 区間加算・区間和取得 区間変更・区間…">
+    <meta name="google-site-verification" content="hVQpNCbv8--SbDf-5rHtTd1AAaPA4s-RbXdpCdCNVmw">
+    <meta name="keywords" content="競技プログラミング">
+
+
+  
+<script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/sdk.js" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/sdk(1).js"></script><script async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/gtm.js"></script><script id="embed-gtm-data-layer-loader" data-data-layer-page-specific="{&quot;hatenablog&quot;:{&quot;blogs_permalink&quot;:{&quot;blog_afc_issued&quot;:&quot;false&quot;,&quot;is_blog_sleeping&quot;:&quot;true&quot;,&quot;entry_afc_issued&quot;:&quot;false&quot;,&quot;is_author_pro&quot;:&quot;false&quot;,&quot;has_related_entries_with_elasticsearch&quot;:&quot;true&quot;}}}">
+(function() {
+  function loadDataLayer(elem, attrName) {
+    if (!elem) { return {}; }
+    var json = elem.getAttribute(attrName);
+    if (!json) { return {}; }
+    return JSON.parse(json);
+  }
+
+  var globalVariables = loadDataLayer(
+    document.documentElement,
+    'data-data-layer'
+  );
+  var pageSpecificVariables = loadDataLayer(
+    document.getElementById('embed-gtm-data-layer-loader'),
+    'data-data-layer-page-specific'
+  );
+
+  var variables = [globalVariables, pageSpecificVariables];
+
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+
+  for (var i = 0; i < variables.length; i++) {
+    window.dataLayer.push(variables[i]);
+  }
+})();
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4CXTW');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="https://betrue12.hateblo.jp/icon/favicon">
+<link rel="apple-touch-icon" href="https://betrue12.hateblo.jp/icon/touch">
+<link rel="icon" sizes="192x192" href="https://betrue12.hateblo.jp/icon/link">
+
+  
+
+<link rel="alternate" type="application/atom+xml" title="Atom" href="https://betrue12.hateblo.jp/feed">
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="https://betrue12.hateblo.jp/rss">
+
+  <link rel="alternate" type="application/json+oembed" href="https://hatena.blog/oembed?url=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940&amp;format=json" title="oEmbed Profile of AtCoder LibraryのLazy Segtreeのチートシート">
+<link rel="alternate" type="text/xml+oembed" href="https://hatena.blog/oembed?url=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940&amp;format=xml" title="oEmbed Profile of AtCoder LibraryのLazy Segtreeのチートシート">
+  
+  <link rel="author" href="http://www.hatena.ne.jp/betrue12/">
+
+  
+
+  
+
+
+  
+    
+<link rel="stylesheet" type="text/css" href="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/blog.css">
+
+    
+  <link rel="stylesheet" type="text/css" href="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/da71e9c0864c8aef258e6a2c1d1361ac3ccf1f95">
+  
+  
+
+  
+
+  
+<script> </script>
+
+  
+<style>
+  div#google_afc_user,
+  div.google-afc-user-container,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+  
+    <script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/valve.js" async=""></script>
+<script id="test-valve-definition">
+  var valve = window.valve || [];
+
+  valve.push(function(v) {
+    
+    
+
+    v.config({
+      service: 'blog',
+      content: {
+        result: 'adtrust',
+        documentIds: ["blog:entry:26006613631162129"]
+      }
+    });
+    v.defineDFPSlot({"sizes":[[300,250],[336,280]],"slotId":"google_afc_user_container_0","unit":"/4374287/blo_pc_com_6_3328_0_no"});    v.defineDFPSlot({"lazy":1,"sizes":{"mappings":[[[320,568],[[336,280],[300,250],"fluid"]],[[0,0],[[300,250]]]]},"slotId":"sleeping-ad-in-entry","unit":"/4374287/blog_pc_entry_sleep_in-article"});    v.defineDFPSlot({"lazy":"","sizes":[[300,250],[336,280],[468,60],"fluid"],"slotId":"google_afc_user_container_1","unit":"/4374287/blog_user"});
+    v.sealDFPSlots();
+  });
+</script>
+
+  
+
+  
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","dateModified":"2020-09-26T14:36:36+09:00","datePublished":"2020-09-23T00:59:40+09:00","headline":"AtCoder LibraryのLazy Segtreeのチートシート","image":["https://cdn.user.blog.st-hatena.com/default_entry_og_image/106916089/1592411661884548"]}</script>
+
+  
+
+  
+<script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/itm.js"></script><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,"hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0px;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:lucida grande,tahoma,verdana,arial,"hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:400;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{0%{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+
+.fb_dialog{background:#525252b3;position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:700;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif) #fff no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:#0006;inset:0;min-height:100%;position:absolute;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba),to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:#fff 0 1px 1px -1px inset;color:#fff;font:700 14px Helvetica,sans-serif;text-overflow:ellipsis;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2),to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:700 12px Helvetica,sans-serif;margin:2px -12px;padding:2px 6px 3px;text-shadow:rgba(0,30,84,.296875) 0px -1px 0px}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:700;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4A4A4A;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4A4A4A;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v4/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/apstag.js"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/pwt.js"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/tag"></script><script type="text/javascript" async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/f.txt"></script><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none; box-sizing: content-box}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/3466" type="text/javascript" async="async"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/f(1).txt" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202506120101/gpt" rel="compression-dictionary"><meta http-equiv="origin-trial" content="A/vXSuiuvzsL+Db89QNS/YzqK5Wmzx9oASGHZVMjcaWfVdbB6eUJrJGNr7uhrsmiGhryVjVALd72agYzELDTMAgAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2OTc2NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A0KGawWMfAygakxUO+Z3rulPwK2j0AqkLneiEt4pAI951GYaafeHNV9Ya+PAn7s0y12QSrfTjc9LdOUU+QfkdQwAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY2OTc2NjM5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></head>
+
+  <body class="page-entry category-AtCoder category-プログラミング category-競技プログラミング globalheader-ng-enabled"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+    
+
+<div id="globalheader-container" data-brand="hatenablog">
+  <iframe id="globalheader" height="37" frameborder="0" allowtransparency="true" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/saved_resource.html"></iframe>
+</div>
+
+
+  
+  
+  
+    <nav class="
+      blog-controlls
+      
+    ">
+      <div class="blog-controlls-blog-icon">
+        <a href="https://betrue12.hateblo.jp/">
+          <img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/blog-icon-noimage.png" alt="ARMERIA">
+        </a>
+      </div>
+      <div class="blog-controlls-title">
+        <a href="https://betrue12.hateblo.jp/">ARMERIA</a>
+      </div>
+      <a href="https://blog.hatena.ne.jp/betrue12/betrue12.hateblo.jp/subscribe?utm_campaign=subscribe_blog&amp;utm_source=blogs_topright_button&amp;utm_medium=button" class="blog-controlls-subscribe-btn test-blog-header-controlls-subscribe">
+        読者になる
+      </a>
+    </nav>
+  
+
+  <div id="container">
+    <div id="container-inner">
+      <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="https://betrue12.hateblo.jp/">ARMERIA</a></h1>
+      
+        <h2 id="blog-description">Rubyと競技プログラミングの話　AtCoderやCodeforcesの問題解説記事が多め。</h2>
+      
+    </div>
+  </div>
+</header>
+
+      
+
+      
+      
+
+
+
+
+<div id="content" class="hfeed">
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+  <article class="entry no-entry sleeping-ads" style="display: block !important;">
+    <div class="entry-inner">
+      <div class="entry-content">
+        
+        
+        <div class="variable-mobileWeb-ad">
+          <div id="google_afc_user_container_0" class="sleeping-ad" style="" data-google-query-id="CN-_iYWI7o0DFWhFwwYdm7IZ0A"><div id="google_ads_iframe_/4374287/blo_pc_com_6_3328_0_no_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/container.html" id="google_ads_iframe_/4374287/blo_pc_com_6_3328_0_no_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="1" height="1" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="2" style="border: 0px; vertical-align: bottom; width: 300px; height: 250px;" data-load-complete="true"></iframe></div></div>
+        </div>
+        
+
+        
+        <p class="sleeping-ads-notice" style="display: none;">この広告は、90日以上更新していないブログに表示しています。</p>
+      </div>
+    </div>
+  </article>
+
+
+          
+
+
+  
+
+
+          
+  
+  <!-- google_ad_section_start -->
+  <!-- rakuten_ad_target_begin -->
+  
+  
+  
+
+  
+
+  
+    
+      
+        <article class="entry hentry test-hentry js-entry-article date-first autopagerize_page_element chars-3200 words-600 mode-markdown entry-odd" id="entry-26006613631162129" data-keyword-campaign="" data-uuid="26006613631162129" data-publication-type="entry">
+  <div class="entry-inner">
+    <header class="entry-header">
+  
+    <div class="date entry-date first">
+    <a href="https://betrue12.hateblo.jp/archive/2020/09/23" rel="nofollow">
+      <time datetime="2020-09-22T15:59:40Z" title="2020-09-22T15:59:40Z">
+        <span class="date-year">2020</span><span class="hyphen">-</span><span class="date-month">09</span><span class="hyphen">-</span><span class="date-day">23</span>
+      </time>
+    </a>
+      </div>
+  <h1 class="entry-title">
+  <a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940" class="entry-title-link bookmark">AtCoder LibraryのLazy Segtreeのチートシート</a>
+</h1>
+
+  
+  
+
+  <div class="entry-categories categories">
+    
+    <a href="https://betrue12.hateblo.jp/archive/category/AtCoder" class="entry-category-link category-AtCoder">AtCoder</a>
+    
+    <a href="https://betrue12.hateblo.jp/archive/category/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" class="entry-category-link category-プログラミング">プログラミング</a>
+    
+    <a href="https://betrue12.hateblo.jp/archive/category/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" class="entry-category-link category-競技プログラミング">競技プログラミング</a>
+    
+  </div>
+
+
+  
+
+  
+
+</header>
+
+    
+
+
+    <div class="entry-content hatenablog-entry">
+  
+    <p><a href="https://betrue12.hateblo.jp/entry/2020/09/22/194541">AtCoder LibraryのLazy Segtreeの使い方 - ARMERIA</a></p>
+
+<p>こちらの記事で<a class="keyword" href="http://d.hatena.ne.jp/keyword/AtCoder">AtCoder</a> LibraryのLazy Segtreeの使い方を説明しましたが、コンテスト中に読んでられっか！みたいな時のためにコピペで使える<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C1%A1%BC%A5%C8%A5%B7%A1%BC%A5%C8">チートシート</a>をまとめます。整数列に対する、以下の組み合わせ6種類です。</p>
+
+<ul>
+<li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>変更クエリ：加算、更新</li>
+<li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>取得クエリ：最小値、最大値、和</li>
+</ul>
+
+
+<p>オーバーフローで死なないように整数列の要素を <code>long long</code> で扱っています。また <code>INF</code> および <code>ID</code> として <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;8&lt;/mn&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;18&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 4.438em; display: inline-block;"><span style="display: inline-block; position: relative; width: 3.574em; height: 0px; font-size: 124%;"><span style="position: absolute; clip: rect(1.443em, 1003.57em, 2.653em, -999.997em); top: -2.474em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3" style="font-family: STIXGeneral-Regular;">8</span><span class="mo" id="MathJax-Span-4" style="font-family: STIXGeneral-Regular; padding-left: 0.233em;">×</span><span class="msubsup" id="MathJax-Span-5" style="padding-left: 0.233em;"><span style="display: inline-block; position: relative; width: 1.789em; height: 0px;"><span style="position: absolute; clip: rect(3.113em, 1000.98em, 4.15em, -999.997em); top: -3.972em; left: 0em;"><span class="mn" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular;">10</span><span style="display: inline-block; width: 0px; height: 3.978em;"></span></span><span style="position: absolute; top: -4.375em; left: 0.982em;"><span class="texatom" id="MathJax-Span-7"><span class="mrow" id="MathJax-Span-8"><span class="mn" id="MathJax-Span-9" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">18</span></span></span><span style="display: inline-block; width: 0px; height: 3.978em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.068em; border-left: 0px solid; width: 0px; height: 1.289em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>8</mn><mo>×</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>18</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-1"> 8\times 10^{18}</script> を使います。</p>
+
+<ul class="table-of-contents">
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%8A%A0%E7%AE%97%E5%8C%BA%E9%96%93%E6%9C%80%E5%B0%8F%E5%80%A4%E5%8F%96%E5%BE%97">区間加算・区間最小値取得</a></li>
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%8A%A0%E7%AE%97%E5%8C%BA%E9%96%93%E6%9C%80%E5%A4%A7%E5%80%A4%E5%8F%96%E5%BE%97">区間加算・区間最大値取得</a></li>
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%8A%A0%E7%AE%97%E5%8C%BA%E9%96%93%E5%92%8C%E5%8F%96%E5%BE%97">区間加算・区間和取得</a></li>
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%A4%89%E6%9B%B4%E5%8C%BA%E9%96%93%E6%9C%80%E5%B0%8F%E5%80%A4%E5%8F%96%E5%BE%97">区間変更・区間最小値取得</a></li>
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%A4%89%E6%9B%B4%E5%8C%BA%E9%96%93%E6%9C%80%E5%A4%A7%E5%80%A4%E5%8F%96%E5%BE%97">区間変更・区間最大値取得</a></li>
+    <li><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#%E5%8C%BA%E9%96%93%E5%A4%89%E6%9B%B4%E5%8C%BA%E9%96%93%E5%92%8C%E5%8F%96%E5%BE%97">区間変更・区間和取得</a></li>
+</ul>
+
+<div id="sleeping-ad-in-entry" class="sleeping-ad-in-entry" data-google-query-id="CL6ZiYWI7o0DFc5FwwYdnlYPPQ"><div id="google_ads_iframe_/4374287/blog_pc_entry_sleep_in-article_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/container(1).html" id="google_ads_iframe_/4374287/blog_pc_entry_sleep_in-article_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div><h2 id="区間加算区間最小値取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>加算・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>最小値取得</h2>
+
+<p>AOJ（RMQ and RAQ）提出：<a href="https://onlinejudge.u-aizu.ac.jp/solutions/problem/DSL_2_H/review/4864572/betrue12/C++17">Aizu Online Judge</a></p>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synStatement">using</span> S = <span class="synType">long</span> <span class="synType">long</span>;
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+<span class="synType">const</span> S INF = <span class="synConstant">8e18</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> std::min(a, b); }
+S e(){ <span class="synStatement">return</span> INF; }
+S mapping(F f, S x){ <span class="synStatement">return</span> f+x; }
+F composition(F f, F g){ <span class="synStatement">return</span> f+g; }
+F id(){ <span class="synStatement">return</span> <span class="synConstant">0</span>; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N);
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+<h2 id="区間加算区間最大値取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>加算・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>最大値取得</h2>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synStatement">using</span> S = <span class="synType">long</span> <span class="synType">long</span>;
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+<span class="synType">const</span> S INF = <span class="synConstant">8e18</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> std::max(a, b); }
+S e(){ <span class="synStatement">return</span> -INF; }
+S mapping(F f, S x){ <span class="synStatement">return</span> f+x; }
+F composition(F f, F g){ <span class="synStatement">return</span> f+g; }
+F id(){ <span class="synStatement">return</span> <span class="synConstant">0</span>; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N);
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+<h2 id="区間加算区間和取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>加算・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>和取得</h2>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>幅が必要なので値を構造体で持ちます。<code>seg.prod(l, r).value</code> で値を取り出してください。</p>
+
+<p>AOJ（RSQ and RAQ）提出：<a href="https://onlinejudge.u-aizu.ac.jp/solutions/problem/DSL_2_G/review/4864566/betrue12/C++17">Aizu Online Judge</a></p>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synType">struct</span> S{
+    <span class="synType">long</span> <span class="synType">long</span> value;
+    <span class="synType">int</span> size;
+};
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> {a.value+b.value, a.size+b.size}; }
+S e(){ <span class="synStatement">return</span> {<span class="synConstant">0</span>, <span class="synConstant">0</span>}; }
+S mapping(F f, S x){ <span class="synStatement">return</span> {x.value + f*x.size, x.size}; }
+F composition(F f, F g){ <span class="synStatement">return</span> f+g; }
+F id(){ <span class="synStatement">return</span> <span class="synConstant">0</span>; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N, {<span class="synConstant">0</span>, <span class="synConstant">1</span>});
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+<h2 id="区間変更区間最小値取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>変更・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>最小値取得</h2>
+
+<p>AOJ（RMQ and RUQ）提出：<a href="https://onlinejudge.u-aizu.ac.jp/solutions/problem/DSL_2_F/review/4864554/betrue12/C++17">Aizu Online Judge</a></p>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synStatement">using</span> S = <span class="synType">long</span> <span class="synType">long</span>;
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+<span class="synType">const</span> S INF = <span class="synConstant">8e18</span>;
+<span class="synType">const</span> F ID = <span class="synConstant">8e18</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> std::min(a, b); }
+S e(){ <span class="synStatement">return</span> INF; }
+S mapping(F f, S x){ <span class="synStatement">return</span> (f == ID ? x : f); }
+F composition(F f, F g){ <span class="synStatement">return</span> (f == ID ? g : f); }
+F id(){ <span class="synStatement">return</span> ID; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N);
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+<h2 id="区間変更区間最大値取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>変更・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>最大値取得</h2>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synStatement">using</span> S = <span class="synType">long</span> <span class="synType">long</span>;
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+<span class="synType">const</span> S INF = <span class="synConstant">8e18</span>;
+<span class="synType">const</span> F ID = <span class="synConstant">8e18</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> std::max(a, b); }
+S e(){ <span class="synStatement">return</span> -INF; }
+S mapping(F f, S x){ <span class="synStatement">return</span> (f == ID ? x : f); }
+F composition(F f, F g){ <span class="synStatement">return</span> (f == ID ? g : f); }
+F id(){ <span class="synStatement">return</span> ID; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N);
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+<h2 id="区間変更区間和取得"><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>変更・<a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>和取得</h2>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%B6%E8%B4%D6">区間</a>幅が必要なので値を構造体で持ちます。<code>seg.prod(l, r).value</code> で値を取り出してください。</p>
+
+<p>AOJ（RSQ and RUQ）提出：<a href="https://onlinejudge.u-aizu.ac.jp/solutions/problem/DSL_2_I/review/4863687/betrue12/C++17">Aizu Online Judge</a></p>
+
+<pre class="code lang-cpp" data-lang="cpp" data-unlink=""><span class="synType">struct</span> S{
+    <span class="synType">long</span> <span class="synType">long</span> value;
+    <span class="synType">int</span> size;
+};
+<span class="synStatement">using</span> F = <span class="synType">long</span> <span class="synType">long</span>;
+
+<span class="synType">const</span> F ID = <span class="synConstant">8e18</span>;
+
+S op(S a, S b){ <span class="synStatement">return</span> {a.value+b.value, a.size+b.size}; }
+S e(){ <span class="synStatement">return</span> {<span class="synConstant">0</span>, <span class="synConstant">0</span>}; }
+S mapping(F f, S x){
+    <span class="synStatement">if</span>(f != ID) x.value = f*x.size;
+    <span class="synStatement">return</span> x;
+}
+F composition(F f, F g){ <span class="synStatement">return</span> (f == ID ? g : f); }
+F id(){ <span class="synStatement">return</span> ID; }
+
+<span class="synType">int</span> main(){
+    <span class="synType">int</span> N;
+    std::vector&lt;S&gt; v(N, {<span class="synConstant">0</span>, <span class="synConstant">1</span>});
+    atcoder::lazy_segtree&lt;S, op, e, F, mapping, composition, id&gt; seg(v);
+}
+</pre>
+
+
+    
+
+
+
+
+    
+
+  
+</div>
+
+    
+  <footer class="entry-footer">
+    
+    <div class="entry-tags-wrapper">
+  <div class="entry-tags">  </div>
+</div>
+
+    <p class="entry-footer-section track-inview-by-gtm" data-gtm-track-json="{&quot;area&quot;: &quot;finish_reading&quot;}">
+  <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="betrue12">betrue12</span></span>
+  <span class="entry-footer-time"><a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940"><time data-relative="" datetime="2020-09-22T15:59:40Z" title="2020-09-22T15:59:40Z" class="updated">4年前</time></a></span>
+  
+  
+  
+    <span class="
+      entry-footer-subscribe
+      
+    " data-test-blog-controlls-subscribe="">
+      <a href="https://blog.hatena.ne.jp/betrue12/betrue12.hateblo.jp/subscribe?utm_campaign=subscribe_blog&amp;utm_source=blogs_entry_footer&amp;utm_medium=button">
+        読者になる
+      </a>
+    </span>
+  
+</p>
+
+    
+
+    
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <iframe class="hatena-bookmark-button-frame" title="この記事をはてなブックマークに追加" width="84" height="40" src="javascript:false" style="width: 84px; height: 40px; border: none;" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/saved_resource(1).html"></iframe>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button fb_iframe_widget" data-layout="box_count" data-href="https://betrue12.hateblo.jp/entry/2020/09/23/005940" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=719729204785177&amp;container_width=0&amp;href=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940&amp;layout=box_count&amp;locale=ja_JP&amp;sdk=joey"><span style="vertical-align: bottom; width: 91px; height: 40px;"><iframe name="f64459a2a10fe80e5" width="1000px" height="1000px" data-testid="fb:share_button Facebook Social Plugin" title="fb:share_button Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/share_button.html" style="border: none; visibility: visible; width: 91px; height: 40px;" class=""></iframe></span></div>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <a class="entry-share-button entry-share-button-twitter test-share-button-twitter" href="https://x.com/intent/tweet?text=AtCoder+Library%E3%81%AELazy+Segtree%E3%81%AE%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88+-+ARMERIA&amp;url=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940" title="X（Twitter）で投稿する"></a>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+    
+  
+  
+    
+    <div class="google-afc-image test-google-rectangle-ads">      
+      
+      <div id="google_afc_user_container_1" class="google-afc-user-container google_afc_blocklink2_5 google_afc_boder" data-test-unit="/4374287/blog_user" data-google-query-id="CKq0ioWI7o0DFWhFwwYdm7IZ0A"><div id="google_ads_iframe_/4374287/blog_user_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/4374287/blog_user_0" name="google_ads_iframe_/4374287/blog_user_0" title="3rd party ad content" width="336" height="280" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="3" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/saved_resource(2).html"></iframe></div></div>
+      
+        <a href="http://blog.hatena.ne.jp/guide/pro" class="open-pro-modal" data-guide-pro-modal-ad-url="https://hatena.blog/guide/pro/modal/ad">広告を非表示にする</a>
+      
+    </div>
+  
+  
+
+
+    <div class="customized-footer">
+      
+
+        
+
+          <div class="entry-footer-modules" id="entry-footer-secondary-modules">      
+<div class="hatena-module hatena-module-related-entries">
+      
+  <!-- Hatena-Epic-has-related-entries-with-elasticsearch:true -->
+  <div class="hatena-module-title">
+    関連記事
+  </div>
+  <div class="hatena-module-body">
+    <ul class="related-entries hatena-urllist urllist-with-thumbnails">
+  
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://betrue12.hateblo.jp/entry/2020/10/05/124052">
+  <img alt="個数制限付き部分和問題+条件を満たす選び方の数え上げ" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/https___cdn.user.blog.st-hatena.com_default_entry_og_image_106916089_1592411661884548" class="urllist-image related-entries-image" title="個数制限付き部分和問題+条件を満たす選び方の数え上げ" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://betrue12.hateblo.jp/archive/2020/10/05" rel="nofollow">
+    <time datetime="2020-10-05T03:40:52Z" title="2020年10月5日">
+      2020-10-05
+    </time>
+  </a>
+</div>
+
+          <a href="https://betrue12.hateblo.jp/entry/2020/10/05/124052" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">個数制限付き部分和問題+条件を満たす選び方の数え上げ</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">先日のコンテストの問題における、最後の高速化について知りた…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://betrue12.hateblo.jp/entry/2020/09/27/013719">
+  <img alt="ACL Beginner Contest E - Replace Digits" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/https___cdn.user.blog.st-hatena.com_default_entry_og_image_106916089_1592411661884548" class="urllist-image related-entries-image" title="ACL Beginner Contest E - Replace Digits" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://betrue12.hateblo.jp/archive/2020/09/27" rel="nofollow">
+    <time datetime="2020-09-26T16:37:19Z" title="2020年9月27日">
+      2020-09-27
+    </time>
+  </a>
+</div>
+
+          <a href="https://betrue12.hateblo.jp/entry/2020/09/27/013719" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">ACL Beginner Contest E - Replace Digits</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">E - Replace Digits 先日、AtCoder Libraryの遅延伝播セグメン…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://betrue12.hateblo.jp/entry/2020/09/22/194541">
+  <img alt="AtCoder LibraryのLazy Segtreeの使い方" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/https___cdn-ak.f.st-hatena.com_images_fotolife_b_betrue12_20200922_20200922142356.png" class="urllist-image related-entries-image" title="AtCoder LibraryのLazy Segtreeの使い方" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://betrue12.hateblo.jp/archive/2020/09/22" rel="nofollow">
+    <time datetime="2020-09-22T10:45:41Z" title="2020年9月22日">
+      2020-09-22
+    </time>
+  </a>
+</div>
+
+          <a href="https://betrue12.hateblo.jp/entry/2020/09/22/194541" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">AtCoder LibraryのLazy Segtreeの使い方</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">AtCoder Libraryが遅延伝播機能を持つセグメント木 atcoder::la…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://betrue12.hateblo.jp/entry/2020/03/30/220421">
+  <img alt="「セグメント木に行列を乗せる」とはどういうことか" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/https___chart.apis.google.com_chart_cht=tx&amp;chl=%20a%2C%20b%2C%20c" class="urllist-image related-entries-image" title="「セグメント木に行列を乗せる」とはどういうことか" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://betrue12.hateblo.jp/archive/2020/03/30" rel="nofollow">
+    <time datetime="2020-03-30T13:04:21Z" title="2020年3月30日">
+      2020-03-30
+    </time>
+  </a>
+</div>
+
+          <a href="https://betrue12.hateblo.jp/entry/2020/03/30/220421" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">「セグメント木に行列を乗せる」とはどういうことか</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">この記事は元々ある問題のお題箱リクエストのために書いていた…</div>
+      </div>
+    </li>
+  
+    
+    <li class="urllist-item related-entries-item">
+      <div class="urllist-item-inner related-entries-item-inner">
+        
+          
+                      <a class="urllist-image-link related-entries-image-link" href="https://betrue12.hateblo.jp/entry/2020/03/28/112326">
+  <img alt="左端から見た右端、右端から見た左端にそれぞれ条件があるような区間の数え上げテクニック" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/https___chart.apis.google.com_chart_cht=tx&amp;chl=%20A_%7B1%7D%2C%20...%2C%20A_%7BN%7D" class="urllist-image related-entries-image" title="左端から見た右端、右端から見た左端にそれぞれ条件があるような区間の数え上げテクニック" width="100" height="100" loading="lazy">
+</a>
+            <div class="urllist-date-link related-entries-date-link">
+  <a href="https://betrue12.hateblo.jp/archive/2020/03/28" rel="nofollow">
+    <time datetime="2020-03-28T02:23:26Z" title="2020年3月28日">
+      2020-03-28
+    </time>
+  </a>
+</div>
+
+          <a href="https://betrue12.hateblo.jp/entry/2020/03/28/112326" class="urllist-title-link related-entries-title-link  urllist-title related-entries-title">左端から見た右端、右端から見た左端にそれぞれ条件があるような区間の数え上げテクニック</a>
+
+
+          
+          
+
+                      <div class="urllist-entry-body related-entries-entry-body">イマイチ良い言葉が見つからなかったのでタイトルが長くなりま…</div>
+      </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+  </div>
+        
+
+      
+    </div>
+    
+  <div class="comment-box js-comment-box">
+    
+    <ul class="comment js-comment">
+      <li class="read-more-comments" style="display: none;"><a>もっと読む</a></li>
+    </ul>
+    
+      <a class="leave-comment-title js-leave-comment-title">コメントを書く</a>
+    
+  </div>
+
+  </footer>
+
+  </div>
+</article>
+
+      
+      
+    
+  
+
+  
+  <!-- rakuten_ad_target_end -->
+  <!-- google_ad_section_end -->
+  
+  
+  
+  <div class="pager pager-permalink permalink">
+    
+      
+      <span class="pager-prev">
+        <a href="https://betrue12.hateblo.jp/entry/2020/09/27/013719" rel="prev">
+          <span class="pager-arrow">« </span>
+          ACL Beginner Contest E - Replace Digits
+        </a>
+      </span>
+    
+    
+      
+      <span class="pager-next">
+        <a href="https://betrue12.hateblo.jp/entry/2020/09/22/194541" rel="next">
+          AtCoder LibraryのLazy Segtreeの使い方
+          <span class="pager-arrow"> »</span>
+        </a>
+      </span>
+    
+  </div>
+
+
+  
+
+
+
+        </div>
+      </div>
+
+      <aside id="box1">
+  <div id="box1-inner">
+  </div>
+</aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    Author
+  </div>
+  <div class="hatena-module-body">
+    
+    <a href="https://betrue12.hateblo.jp/about" class="profile-icon-link">
+      <img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/profile.png" alt="id:betrue12" class="profile-icon">
+    </a>
+    
+
+    
+
+    
+
+    
+    <div class="profile-description">
+      <p>競技プログラミングをしていました</p>
+
+    </div>
+    
+
+    
+
+    
+
+    <div class="profile-about">
+      <a href="https://betrue12.hateblo.jp/about">このブログについて</a>
+    </div>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="https://betrue12.hateblo.jp/search" method="get">
+  <input type="text" name="q" class="search-module-input" value="" placeholder="記事を検索" required="">
+  <input type="submit" value="検索" class="search-module-button">
+</form>
+
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://twitter.com/armeria_betrue">Twitter</a>
+        </li>
+      
+        <li>
+          <a href="https://beta.atcoder.jp/users/betrue12">AtCoderユーザーページ</a>
+        </li>
+      
+        <li>
+          <a href="https://codeforces.com/profile/betrue12">Codeforcesユーザーページ</a>
+        </li>
+      
+        <li>
+          <a href="https://www.amazon.co.jp/gp/product/483997277X">PAST公式テキストを書きました</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="https://betrue12.hateblo.jp/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://betrue12.hateblo.jp/entry/2021/06/06/132053" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">Ritsumeikan University Programming Contest 2013 (AOJ 2507) Computer Onesan</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://betrue12.hateblo.jp/entry/2021/04/25/155849" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">yukicoder No.1460 Max of Min</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://betrue12.hateblo.jp/entry/2021/03/28/154410" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">AtCoder Beginner Contest 195 F - Coprime Present</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://betrue12.hateblo.jp/entry/2021/03/20/165000" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">AtCoder Heuristic Contest 001 参加記</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+          
+          
+          <a href="https://betrue12.hateblo.jp/entry/2021/02/21/141858" class="urllist-title-link recent-entries-title-link  urllist-title recent-entries-title">AtCoder Regular Contest 047 C - N!÷K番目の単語</a>
+
+
+          
+          
+
+                </div>
+    </li>
+  
+</ul>
+
+      </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="https://betrue12.hateblo.jp/archive">
+  <div class="hatena-module-title">
+    <a href="https://betrue12.hateblo.jp/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+    
+      
+        <ul class="hatena-urllist">
+          
+            <li class="archive-module-year" data-year="2021">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://betrue12.hateblo.jp/archive/2021" class="archive-module-year-title archive-module-year-2021">
+                2021
+               (9)</a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2021/06" class="archive-module-month-title archive-module-month-2021-6">
+                      2021 / 6
+                     (1)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2021/04" class="archive-module-month-title archive-module-month-2021-4">
+                      2021 / 4
+                     (1)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2021/03" class="archive-module-month-title archive-module-month-2021-3">
+                      2021 / 3
+                     (2)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2021/02" class="archive-module-month-title archive-module-month-2021-2">
+                      2021 / 2
+                     (4)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2021/01" class="archive-module-month-title archive-module-month-2021-1">
+                      2021 / 1
+                     (1)</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2020">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://betrue12.hateblo.jp/archive/2020" class="archive-module-year-title archive-module-year-2020">
+                2020
+               (123)</a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/11" class="archive-module-month-title archive-module-month-2020-11">
+                      2020 / 11
+                     (5)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/10" class="archive-module-month-title archive-module-month-2020-10">
+                      2020 / 10
+                     (5)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/09" class="archive-module-month-title archive-module-month-2020-9">
+                      2020 / 9
+                     (14)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/08" class="archive-module-month-title archive-module-month-2020-8">
+                      2020 / 8
+                     (8)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/07" class="archive-module-month-title archive-module-month-2020-7">
+                      2020 / 7
+                     (4)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/06" class="archive-module-month-title archive-module-month-2020-6">
+                      2020 / 6
+                     (12)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/05" class="archive-module-month-title archive-module-month-2020-5">
+                      2020 / 5
+                     (18)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/04" class="archive-module-month-title archive-module-month-2020-4">
+                      2020 / 4
+                     (11)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/03" class="archive-module-month-title archive-module-month-2020-3">
+                      2020 / 3
+                     (17)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/02" class="archive-module-month-title archive-module-month-2020-2">
+                      2020 / 2
+                     (18)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2020/01" class="archive-module-month-title archive-module-month-2020-1">
+                      2020 / 1
+                     (11)</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2019">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://betrue12.hateblo.jp/archive/2019" class="archive-module-year-title archive-module-year-2019">
+                2019
+               (122)</a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/12" class="archive-module-month-title archive-module-month-2019-12">
+                      2019 / 12
+                     (9)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/11" class="archive-module-month-title archive-module-month-2019-11">
+                      2019 / 11
+                     (12)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/10" class="archive-module-month-title archive-module-month-2019-10">
+                      2019 / 10
+                     (12)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/09" class="archive-module-month-title archive-module-month-2019-9">
+                      2019 / 9
+                     (8)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/08" class="archive-module-month-title archive-module-month-2019-8">
+                      2019 / 8
+                     (9)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/07" class="archive-module-month-title archive-module-month-2019-7">
+                      2019 / 7
+                     (8)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/06" class="archive-module-month-title archive-module-month-2019-6">
+                      2019 / 6
+                     (11)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/05" class="archive-module-month-title archive-module-month-2019-5">
+                      2019 / 5
+                     (15)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/04" class="archive-module-month-title archive-module-month-2019-4">
+                      2019 / 4
+                     (9)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/03" class="archive-module-month-title archive-module-month-2019-3">
+                      2019 / 3
+                     (14)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/02" class="archive-module-month-title archive-module-month-2019-2">
+                      2019 / 2
+                     (7)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2019/01" class="archive-module-month-title archive-module-month-2019-1">
+                      2019 / 1
+                     (8)</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2018">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://betrue12.hateblo.jp/archive/2018" class="archive-module-year-title archive-module-year-2018">
+                2018
+               (74)</a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/12" class="archive-module-month-title archive-module-month-2018-12">
+                      2018 / 12
+                     (14)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/11" class="archive-module-month-title archive-module-month-2018-11">
+                      2018 / 11
+                     (4)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/10" class="archive-module-month-title archive-module-month-2018-10">
+                      2018 / 10
+                     (12)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/09" class="archive-module-month-title archive-module-month-2018-9">
+                      2018 / 9
+                     (13)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/08" class="archive-module-month-title archive-module-month-2018-8">
+                      2018 / 8
+                     (12)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/07" class="archive-module-month-title archive-module-month-2018-7">
+                      2018 / 7
+                     (7)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/06" class="archive-module-month-title archive-module-month-2018-6">
+                      2018 / 6
+                     (8)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/05" class="archive-module-month-title archive-module-month-2018-5">
+                      2018 / 5
+                     (2)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2018/04" class="archive-module-month-title archive-module-month-2018-4">
+                      2018 / 4
+                     (2)</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+            <li class="archive-module-year archive-module-year-hidden" data-year="2015">
+              <div class="archive-module-button">
+                <span class="archive-module-hide-button">▼</span>
+                <span class="archive-module-show-button">▶</span>
+              </div>
+              <a href="https://betrue12.hateblo.jp/archive/2015" class="archive-module-year-title archive-module-year-2015">
+                2015
+               (5)</a>
+              <ul class="archive-module-months">
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2015/05" class="archive-module-month-title archive-module-month-2015-5">
+                      2015 / 5
+                     (1)</a>
+                  </li>
+                
+                  <li class="archive-module-month">
+                    <a href="https://betrue12.hateblo.jp/archive/2015/04" class="archive-module-month-title archive-module-month-2015-4">
+                      2015 / 4
+                     (4)</a>
+                  </li>
+                
+              </ul>
+            </li>
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    
+      
+
+<div class="hatena-module hatena-module-category">
+  <div class="hatena-module-title">
+    カテゴリー
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/AOJ" class="category-AOJ">
+            AOJ (7)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" class="category-競技プログラミング">
+            競技プログラミング (323)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" class="category-プログラミング">
+            プログラミング (324)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/yukicoder" class="category-yukicoder">
+            yukicoder (9)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/AtCoder" class="category-AtCoder">
+            AtCoder (177)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88" class="category-マラソンコンテスト">
+            マラソンコンテスト (6)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/%E6%9B%B8%E7%B1%8D%E5%9F%B7%E7%AD%86" class="category-書籍執筆">
+            書籍執筆 (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/CodinGame" class="category-CodinGame">
+            CodinGame (2)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/JOI" class="category-JOI">
+            JOI (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/Codeforces" class="category-Codeforces">
+            Codeforces (106)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/POJ" class="category-POJ">
+            POJ (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/TopCoder" class="category-TopCoder">
+            TopCoder (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/CS%20Academy" class="category-CS-Academy">
+            CS Academy (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/Ruby" class="category-Ruby">
+            Ruby (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/Rails" class="category-Rails">
+            Rails (1)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/Ruby%E3%81%A7%E3%83%9D%E3%83%B3" class="category-Rubyでポン">
+            Rubyでポン (4)
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://betrue12.hateblo.jp/archive/category/Rubocop" class="category-Rubocop">
+            Rubocop (1)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+      
+
+      
+
+    </div>
+  </div>
+  
+<footer id="footer" data-brand="hatenablog">
+  <div id="footer-inner">
+    
+      <div style="display: block !important;" class="guest-footer js-guide-register test-blogs-register-guide" data-action="guide-register">
+  <div class="guest-footer-content">
+    <h3>はてなブログをはじめよう！</h3>
+    <p>betrue12さんは、はてなブログを使っています。あなたもはてなブログをはじめてみませんか？</p>
+    <div class="guest-footer-btn-container">
+      <div class="guest-footer-btn">
+        <a class="btn btn-register js-inherit-ga" href="https://blog.hatena.ne.jp/register?via=200227" target="_blank">はてなブログをはじめる（無料）</a>
+      </div>
+      <div class="guest-footer-btn">
+        <a href="https://hatena.blog/guide" target="_blank">はてなブログとは</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <address class="footer-address">
+      <a href="https://betrue12.hateblo.jp/">
+        <img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/blog-icon-noimage.png" width="16" height="16" alt="ARMERIA">
+        <span class="footer-address-name">ARMERIA</span>
+      </a>
+    </address>
+    <p class="services">
+      Powered by <a href="https://hatena.blog/">Hatena Blog</a>
+      |
+        <a href="https://blog.hatena.ne.jp/-/abuse_report?target_url=https%3A%2F%2Fbetrue12.hateblo.jp%2Fentry%2F2020%2F09%2F23%2F005940" class="report-abuse-link test-report-abuse-link" target="_blank">ブログを報告する</a>
+    </p>
+  </div>
+</footer>
+
+
+  
+
+  
+
+  
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v17.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  
+  
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-stock" style="display: block;">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once="">
+      <img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/quote-x-icon.svg" title="引用して投稿する">
+    </a>
+  </div>
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+  
+  <div id="hidden-subscribe-button" style="display: none;">
+    <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box">
+
+  <a href="https://betrue12.hateblo.jp/entry/2020/09/23/005940#" class="hatena-follow-button js-hatena-follow-button unsubscribing">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once="">
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box" style="display: block;">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">181</span>
+  </div>
+</div>
+
+  </div>
+
+  
+
+
+
+    
+
+
+  <script async="" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/widgets.js" charset="utf-8"></script>
+
+<script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+<script type="text/javascript" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/jquery.min.js"></script>
+
+
+
+
+
+
+
+<script src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/texts-ja.js"></script>
+
+
+
+  <script id="vendors-js" data-env="production" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/vendors.js" crossorigin="anonymous"></script>
+
+<script id="hatenablog-js" data-env="production" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/hatenablog.js" crossorigin="anonymous" data-page-id="entry"></script>
+
+
+  <script>Hatena.Diary.GlobalHeader.init()</script>
+
+
+
+
+
+
+
+    
+  <script id="valve-dmp" data-service="blog" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/dmp.js" data-test-id="dmpjs" async=""></script>
+
+
+    
+
+
+
+
+
+  
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/widget_iframe.2f70fb173b9000da126c79afe2098f02.html" title="Twitter settings iframe" style="display: none;"></iframe><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; min-width: 0px; max-width: none; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: STIXSizeOneSym, sans-serif;"></div></div><img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/px.gif" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/favicon.ico" style="display: none !important; width: 1px !important; height: 1px !important;"><img src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/px(1).gif" style="display: none !important; width: 1px !important; height: 1px !important;"><script type="text/javascript" id="" charset="">(function(a){var b=a.createElement("iframe"),c="https:"==a.location.protocol?"https://":"http://";b.src=c+"cf.im-apps.net/imid/beacon.html";b.style.display="none";a.body.appendChild(b)})(document);</script><iframe src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/beacon.html" style="display: none;"></iframe><script id="" text="" charset="" type="text/javascript" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/pageview.js"></script><iframe height="0" width="0" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/activityi.html" style="display: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="DC-10208769/invmedia/im8db0+standard" data-load-time="1749806193468" height="0" width="0" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/activityi(1).html" style="display: none; visibility: hidden;"></iframe><script type="text/javascript" id="" charset="">!function(c,d,b,g){if(!d[c]){d[c]=function(){d[c].instances.push(this);this.init&&this.init()};d[c].instances=[];for(var a=0,e=["send"];a<e.length;a++)d[c].prototype[e[a]]=function(f){return function(){this["tmp_"+f]=this["tmp_"+f]||[];this["tmp_"+f].push(Array.prototype.slice.call(arguments))}}(e[a]);a=b.getElementsByTagName(g)[0];b=b.createElement(g);b.async=!0;b.src="//dmp.im-apps.net/mtm/tracker.min.js";a.parentNode.insertBefore(b,a)}}("IMST",window,document,"script");var imst=new IMST;
+imst.siteId="6604";imst.imApiToken="TlOjMPj_m54xiIkb8Mzm7Q";imst.send({custom_data:google_tag_manager["rm"]["972494"](26)});</script>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/saved_resource(3).html"></iframe><fencedframe id="ps_caff" style="display: none;"></fencedframe><iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/saved_resource(4).html"></iframe></body><iframe name="goog_topics_frame" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/topics_frame.html" style="display: none;"></iframe><iframe sandbox="allow-scripts allow-same-origin" id="46cdb3ad7ae79ef8" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/push_sync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="4743d176d41c4168" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/pd.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="48a8f6be4d28458" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/usync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="49bf4920a8dd3b1" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/user_sync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="508f42cb31fabc48" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./AtCoder LibraryのLazy Segtreeのチートシート - ARMERIA_files/async_usersync.html">
+    </iframe></html>

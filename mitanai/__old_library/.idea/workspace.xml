@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51a6202d-1ddd-4785-a3d1-1b966c45419f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data_structure/LCA_prod.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_structure/median_manager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_structure/on_demand_lazy_segtree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/cycle.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/min_cut_k.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/math/sum_of_geometric_sequences.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/Mo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string/manacher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/basic2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/basic/basic2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure/BIT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure/BIT.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure/lazy_segtree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure/lazy_segtree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure/li_chao_tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure/li_chao_tree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure/segtree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure/segtree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_structure/slope_trick.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data_structure/slope_trick.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/HLD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/HLD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/LCA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/LCA.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/MCF.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/MCF.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/SCC.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/SCC.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/dijkstra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dinic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/dinic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/lowlink.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/graph/lowlink.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/combination.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/math/combination.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/crt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/math/crt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/fps.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/math/fps.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math/modint.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/math/modint.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/lis.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/other/lis.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string/run_length_compress.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/string/run_length_compress.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="g14ofgas" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1fWcOCFr1cyfEmw9Tyae87WVpX9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="NEW_TOOLWINDOW_STRIPE_DEFAULTS" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/math" />
+      <recent name="$PROJECT_DIR$/other" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/graph" />
+      <recent name="$PROJECT_DIR$/matrix" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51a6202d-1ddd-4785-a3d1-1b966c45419f" name="Default Changelist" comment="" />
+      <created>1596337254726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596337254726</updated>
+      <workItem from="1596337255773" duration="419000" />
+      <workItem from="1597152323353" duration="468000" />
+      <workItem from="1597195331681" duration="70000" />
+      <workItem from="1597203116662" duration="1261000" />
+      <workItem from="1597915896053" duration="749000" />
+      <workItem from="1599431906486" duration="124000" />
+      <workItem from="1599462522406" duration="14000" />
+      <workItem from="1599744780236" duration="922000" />
+      <workItem from="1599806951726" duration="169000" />
+      <workItem from="1603187826836" duration="35000" />
+      <workItem from="1603189101305" duration="16000" />
+      <workItem from="1603284497727" duration="44000" />
+      <workItem from="1603288392578" duration="287000" />
+      <workItem from="1606136196214" duration="258000" />
+      <workItem from="1611052008649" duration="1132000" />
+      <workItem from="1612941628997" duration="264000" />
+      <workItem from="1612942199748" duration="2300000" />
+      <workItem from="1612964310470" duration="1608000" />
+      <workItem from="1613036024688" duration="3000" />
+      <workItem from="1617266766927" duration="11000" />
+      <workItem from="1617266841879" duration="882000" />
+      <workItem from="1620894207921" duration="2246000" />
+      <workItem from="1624614165085" duration="644000" />
+      <workItem from="1629447727406" duration="866000" />
+      <workItem from="1629519557601" duration="3000" />
+      <workItem from="1629530599605" duration="5000" />
+      <workItem from="1631265631969" duration="2242000" />
+      <workItem from="1631267919172" duration="1519000" />
+      <workItem from="1631269472513" duration="182000" />
+      <workItem from="1631269683468" duration="698000" />
+      <workItem from="1647659376920" duration="227000" />
+      <workItem from="1647659664741" duration="1133000" />
+      <workItem from="1647661648911" duration="10000" />
+      <workItem from="1647661718544" duration="1000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated basic.cpp basic2.cpp">
+      <created>1596337501406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596337501406</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updated README.md">
+      <created>1596337521507</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596337521507</updated>
+    </task>
+    <task id="LOCAL-00003" summary="updated and added some files">
+      <created>1597152584254</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597152584254</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated mint.cpp">
+      <created>1597195395525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597195395525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added trie.cpp">
+      <created>1597203171643</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597203171643</updated>
+    </task>
+    <task id="LOCAL-00006" summary="formatted codes">
+      <created>1597916640598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597916640598</updated>
+    </task>
+    <task id="LOCAL-00007" summary="formatted codes">
+      <created>1599745709961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599745709961</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update files">
+      <created>1606136437588</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606136437588</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update files">
+      <created>1611053087318</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611053087318</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update files">
+      <created>1612941821937</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612941821937</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update files">
+      <created>1612942454445</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612942454445</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated files">
+      <created>1617267560241</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617267560241</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated files">
+      <created>1620895057662</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1620895057662</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated files">
+      <created>1624614211407</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624614211407</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated files">
+      <created>1629447977452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629447977453</updated>
+    </task>
+    <task id="LOCAL-00016" summary="updated files">
+      <created>1631267227768</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631267227768</updated>
+    </task>
+    <task id="LOCAL-00017" summary="updated files">
+      <created>1631268251432</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631268251432</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="updated basic.cpp basic2.cpp" />
+    <MESSAGE value="updated README.md" />
+    <MESSAGE value="updated and added some files" />
+    <MESSAGE value="updated mint.cpp" />
+    <MESSAGE value="added trie.cpp" />
+    <MESSAGE value="formatted codes" />
+    <MESSAGE value="update files" />
+    <MESSAGE value="updated files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated files" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

@@ -1,0 +1,42 @@
+//区間変更，区間和
+
+struct Mypair{
+    mint val=0;
+    ll sz=0;
+};
+
+class M {
+public:
+    using S = Mypair;
+    
+    static constexpr S
+    e = {0,0};
+    
+    static constexpr S
+    
+    op(const S &l, const S &r) {
+        return {l.val+r.val,l.sz+r.sz};
+    }
+    
+    using F = mint;
+    
+    static constexpr F
+    id = -1;
+    
+    static constexpr F
+    
+    composition(const F &g, const F &f) {
+        if(f==mint(-1)) return g;
+        if(g==mint(-1)) return f;
+        return g; 
+    }
+    
+    static constexpr S
+    
+    mapping(const F &f, const S &x) {
+        if(f==mint(-1)) return x;
+        return {f*x.sz,x.sz};
+    }
+};
+
+//
